@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Laboratorio 4</title>
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">Laboratorio 4</span>
+</nav>
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <strong>Formulario de Postulación</strong>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        Para ser apto  debes de ser mayor de edad (18+)
+                        
+                    </div>
+
+                    <label class="sr-only" for="nombre">Nombre Completo</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo" required>
+                    </div>
+
+                    <label class="sr-only" for="edad">Edad</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <input type="number" class="form-control" id="edad" placeholder="Edad" min="18" required>
+
+                    </div>
+
+                    <label class="sr-only" for="sueldo">Sueldo Pretendido</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                        </div>
+                        <input type="number" class="form-control" id="sueldo" placeholder="Sueldo Pretendido" step="0.01" min="0.00" required>
+                    </div>
+
+                    <button class="btn btn-dark btn-block mt-3" id="btn-procesar">Procesar</button>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../resources/js/jquery.slim.min.js"></script>
+<script src="../resources/js/popper.min.js"></script>
+<script src="../resources/js/bootstrap.min.js"></script>
+<script src="../resources/js/sweetalert2.all.min.js"></script>
+<script src="../controllers/index.js"></script>
+</body>
+</html>
